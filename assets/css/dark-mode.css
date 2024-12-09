@@ -1,3 +1,4 @@
+/* Réinitialisation globale */
 * {
     border: 0;
     box-sizing: border-box;
@@ -7,47 +8,33 @@
 
 :root {
     --hue: 223;
-    --primary: hsl(var(--hue),90%,50%);
+    --primary: hsl(var(--hue), 90%, 50%);
     --trans-dur: 0.6s;
-    --trans-timing: cubic-bezier(0.65,0,0.35,1);
+    --trans-timing: cubic-bezier(0.65, 0, 0.35, 1);
     font-size: calc(60px + (120 - 60) * (100vw - 320px) / (2560 - 320));
 }
 
-body:has(.switch__input:checked) {
+.dark-mode {
     background-color: hsl(var(--hue), 10%, 15%);
     color: black hsl(var(--hue), 15%, 90%);
-    filter: invert(100%) hue-rotate(200deg); /* Amélioration esthétique, contraste et luminosité ajustés */
+    filter: invert(100%) hue-rotate(-130deg); /* Amélioration esthétique, contraste et luminosité ajustés */
 }
-body:has(.switch__input:checked) .avatar {
+.dark-mode img,
+.switch {
     background-color: hsl(var(--hue), 10%, 15%);
     color: black hsl(var(--hue), 15%, 90%);
-    filter: invert(100%) hue-rotate(160deg); /* Amélioration esthétique, contraste et luminosité ajustés */
-}
-body:has(.switch__input:checked) img {
-    color: rgba(0, 0, 0, 0) hsl(var(--hue), 15%, 90%);
-    filter: invert(100%) hue-rotate(160deg); /* Amélioration esthétique, contraste et luminosité ajustés */
+    filter: invert(100%) hue-rotate(-210deg); /* Amélioration esthétique, contraste et luminosité ajustés */
 }
 
-body:has(.switch__input:checked) img {
-    color: rgba(0, 0, 0, 0) hsl(var(--hue), 15%, 90%);
-    filter: invert(100%) hue-rotate(160deg); /* Amélioration esthétique, contraste et luminosité ajustés */
-}
-body:has(.switch__input:checked) .highlight-beige {
-    background-color:rgb(206, 206, 206);
-}
-body:has(.switch__input:checked) .custom-app-form-button-send {
-    color:#ff0000cb;
-    filter: invert(100%) hue-rotate(160deg);
-}
-body:has(.switch__input:checked) .custom-app-form-button-cancel {
-    color:#00ff22cb;
-    filter: invert(100%) hue-rotate(160deg);
-}
+
+
+/* Styles pour le switch */
 .switch,
 .switch__input {
     display: block;
     -webkit-tap-highlight-color: transparent;
 }
+
 .switch {
     margin: auto;
     position: relative;

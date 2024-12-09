@@ -3456,8 +3456,10 @@ body {
         margin-right:8.6%
     }
 }
+
+/**side box */
 #crt-side-box{
-    transition:top .3s ease-out
+    transition:top .3s ease-out;
 }
 .crt-side-box-btn{
     padding:20px;
