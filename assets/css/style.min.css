@@ -1768,7 +1768,6 @@ body {
     animation: morph 8s ease-in-out infinite;
     border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
     border: 3px solid #565a97;
-    transition: all 1s ease-in-out;
     z-index: 5;
 }
 
@@ -4293,10 +4292,10 @@ body {
 }
 .education-company{
     color: #000;
+    text-indent: -1em;
     line-height:0.1;
     letter-spacing:0;
     display:inline-block;
-    width: 300px;
 }
 @media (min-width:768px){
     .education-box:before,.education:before{
@@ -4944,4 +4943,8 @@ mark {
     width: 150px;
     margin: 70px;
     padding-right: 80px;
+}
+.selected-nav {
+    background-color: rgba(0, 0, 85, 0.295);
+    border-radius: 10%;
 }
