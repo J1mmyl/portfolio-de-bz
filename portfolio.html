@@ -27,6 +27,9 @@
     <!-- waves animation -->
     <meta name="social-media" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="assets/css/waves.css">
+    <!-- nav -->
+    <meta name="social-media" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/css/selected-nav.css">
   </head>
   <body class="">
     <div class="crt-wrapper">
@@ -140,11 +143,6 @@
               </a>
             </li>
             <li>
-              <a href="category.html" data-tooltip="Blog">
-                <span class="crt-icon crt-icon-blog"></span>
-              </a>
-            </li>
-            <li>
               <!-- partial:index.partial.html -->
               <svg display="none">
                 <symbol id="light" viewBox="0 0 24 24">
@@ -246,18 +244,24 @@
             <div class="crt-nav-cont">
               <div id="crt-nav-scroll">
                 <nav id="crt-nav" class="crt-nav">
+
+
                   <ul class="clear-list">
-                  <li>
-                    <a href="index.html" data-tooltip="Home">
-                      <img class="avatar avatar-42" src="assets/images/uploads/avatar/jimmy-42.png" srcset="assets/images/uploads/avatar/jimmy-84.png" alt="">
-                    </a>
-                  </li>
+                    <li>
+                      <a href="index.html" data-tooltip="Home">
+                        <img class="avatar avatar-42" src="assets/images/uploads/avatar/jimmy-42.png" srcset="assets/images/uploads/avatar/jimmy-84.png" alt="">
+                      </a>
+                    </li>
+                  </ul>
+                  
+                  <ul class="clear-list nav-lat-div">
+
                   <li>
                     <a href="experience.html" data-tooltip="Experience">
                       <span class="crt-icon crt-icon-experience"></span>
                     </a>
                   </li>
-                  <li>
+                  <li class="nav-lat">
                     <a href="portfolio.html" data-tooltip="Portfolio">
                       <span class="crt-icon crt-icon-portfolio"></span>
                     </a>
@@ -272,11 +276,11 @@
                       <span class="crt-icon crt-icon-contact"></span>
                     </a>
                   </li>
-                  <li>
-                    <a href="category.html" data-tooltip="Blog">
-                      <span class="crt-icon crt-icon-blog"></span>
-                    </a>
-                  </li>
+                </ul>
+
+
+                <!-- debut bouton-->
+                <ul class="clear-list">
                   <li>
                     <!-- partial:index.partial.html -->
                     <svg display="none">
@@ -318,8 +322,10 @@
                     </label>
                     <!-- partial -->
                   </li>
+                  <!-- fin bouton-->
+                </ul>
+
                   </li>
-                  </ul>
                 </nav>
               </div>
               <div id="crt-nav-tools" class="hidden">

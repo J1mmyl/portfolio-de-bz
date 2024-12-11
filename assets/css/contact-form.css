@@ -8,8 +8,7 @@
 }
 
 .custom-background {
-  display: flex;
-  min-height: 100vh;
+  min-height: 60vh;
 }
 
 .custom-container {
@@ -39,7 +38,6 @@
 }
 
 .custom-screen-header {
-  display: flex;
   align-items: center;
   padding: 10px 20px;
   background: #4d4d4f;
@@ -99,7 +97,7 @@
 }
 
 .custom-app-title {
-  display: flex;
+  width: 50px;
   flex-direction: column;
   position: relative;
   color: #c9c1f8;
@@ -180,7 +178,6 @@
 }
 
 .custom-credits {
-  display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 20px;
@@ -191,7 +188,6 @@
 }
 
 .custom-credits-link {
-  display: flex;
   align-items: center;
   color: #fff;
   font-weight: bold;

@@ -29,6 +29,9 @@
     <link rel="stylesheet" href="assets/css/waves.css">
     <!-- contact forn -->
     <link rel="stylesheet" href="assets/css/contact-form.css">
+    <!-- nav -->
+    <meta name="social-media" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/css/selected-nav.css">
 
   </head>
   <body class="">
@@ -142,11 +145,7 @@
                 <span class="crt-icon crt-icon-contact"></span>
               </a>
             </li>
-            <li>
-              <a href="category.html" data-tooltip="Blog">
-                <span class="crt-icon crt-icon-blog"></span>
-              </a>
-            </li>
+
             <li>
               <!-- partial:index.partial.html -->
               <svg display="none">
@@ -250,12 +249,16 @@
             <div class="crt-nav-cont">
               <div id="crt-nav-scroll">
                 <nav id="crt-nav" class="crt-nav">
+
                   <ul class="clear-list">
                     <li>
                       <a href="index.html" data-tooltip="Home">
                         <img class="avatar avatar-42" src="assets/images/uploads/avatar/jimmy-42.png" srcset="assets/images/uploads/avatar/jimmy-84.png" alt="">
                       </a>
                     </li>
+                  </ul>
+
+                  <ul class="clear-list nav-lat-div">
                     <li>
                       <a href="experience.html" data-tooltip="Experience">
                         <span class="crt-icon crt-icon-experience"></span>
@@ -271,16 +274,14 @@
                         <span class="crt-icon crt-icon-references"></span>
                       </a>
                     </li>
-                    <li>
+                    <li class="nav-lat">
                       <a href="contact.html" data-tooltip="Contact">
                         <span class="crt-icon crt-icon-contact"></span>
                       </a>
                     </li>
-                    <li>
-                      <a href="category.html" data-tooltip="Blog">
-                        <span class="crt-icon crt-icon-blog"></span>
-                      </a>
-                    </li>
+                  </ul>
+
+                  <ul class="clear-list">
                     <li>
                       <!-- partial:index.partial.html -->
                       <svg display="none">
@@ -323,6 +324,7 @@
                       <!-- partial -->
                     </li>
                   </ul>
+
                 </nav>
               </div>
               <div id="crt-nav-tools" class="hidden">
@@ -335,6 +337,8 @@
             <div class="crt-nav-btm"></div>
           </div>
         </div>
+
+
         <!-- .crt-nav-wrap -->
         <div class="crt-container-sm">
           <div class="crt-paper-layers">
@@ -367,8 +371,7 @@
                         <div class="custom-screen-body">
                           <div class="custom-screen-body-item custom-left">
                             <div class="custom-app-title">
-                              <span>CONTACTEZ</span>
-                              <span>MOI !</span>
+                              <span class="crt-icon crt-icon-contact"></span>
                             </div>
 
                           </div>
@@ -413,6 +416,8 @@
         <!-- .crt-container-sm -->
       </div>
       <!-- .crt-container -->
+
+      
       <div id="crt-sidebar">
         <button id="crt-sidebar-close" class="btn btn-icon btn-light btn-shade">
           <span class="crt-icon crt-icon-close"></span>
