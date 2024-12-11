@@ -1787,7 +1787,7 @@ body {
         background: linear-gradient(45deg, var(--primary) 0%, var(--secondary) 100%);
     }
 }
-/* -----------------------------PP 195----------------------------*/
+/* -----------------------------Profile Picture 195----------------------------*/
 .toggle-cont{
     margin:22px 0
 }
@@ -4291,11 +4291,11 @@ body {
     border-right:7px solid transparent
 }
 .education-company{
+    margin-top: 20px;
     color: #000;
     text-indent: -1em;
     line-height:0.1;
     letter-spacing:0;
-    display:inline-block;
 }
 @media (min-width:768px){
     .education-box:before,.education:before{
