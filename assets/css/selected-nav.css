@@ -4,11 +4,24 @@
     width: 40000000px;
     border-radius: 5px;
     height: 40px;
-    border: #643bb1}
+    border: #643bb1
+}
+.nav-lat:hover {
+    /*background: #468fd328;*/
+    transform: scale(2.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+}
+
+
 .nav-top {
     /*background: #d4d6ec65;*/
     color: #643bb1;
     border-radius: 5px;
     height: 40px;
     /*width: 50px;*/
+}
+.nav-top:hover {
+    /*background: #468fd328;*/
+    transform: scale(2.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
 }
