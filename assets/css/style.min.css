@@ -3303,7 +3303,6 @@ body {
 }
 .crt-container{
     width:100%;
-    margin:0 auto
 }
 .crt-container-sm{
     padding-left:20px;
@@ -3335,8 +3334,8 @@ body {
 }
 @media (min-width:992px){
     .crt-wrapper{
-        padding-left:20px;
-        padding-right:20px
+        padding-left:0px; /**Faire colloer la box lateral a gauche */
+        padding-right:5px /**Faire colloer la box lateral a droite */
     }
     .crt-container{
         max-width:810px
@@ -3393,18 +3392,18 @@ body {
         width:100%
     }
     .crt-side-box-on .crt-container-sm{
-        margin-left:310px
+        margin-left:310px;
     }
     .crt-side-box-on .crt-container{
         max-width:1140px
     }
     .crt-side-box-on.crt-nav-on .crt-container{
-        max-width:1196px
+        max-width:100% /**Faire coller la page qui scroll a droite */
     }
 }
 @media (min-width:1200px){
     .crt-side-box-on .crt-container-sm{
-        margin-left:330px
+        margin-left:290px /**Faire coller la page qui scroll a la barre laterale */
     }
 }
 .section{
@@ -4911,7 +4910,7 @@ mark {
     fill:#e1e1e1
 }
 #crt-sidebar-btn,.form-item,.search-form .search-field,body{
-    background-color:#fffffffa
+    background-color:#082741
 }
 .text-dropcup-sq{
     color:#fff

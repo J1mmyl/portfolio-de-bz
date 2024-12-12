@@ -19,11 +19,13 @@
     color: black hsl(var(--hue), 15%, 90%);
     filter: invert(100%) hue-rotate(-130deg); /* Amélioration esthétique, contraste et luminosité ajustés */
 }
-.dark-mode .avatar {
-    background-color: hsl(var(--hue), 10%, 15%);
+.dark-mode .avatar,
+.dark-mode img {
     color: black hsl(var(--hue), 15%, 90%);
     filter: invert(100%) hue-rotate(-230deg); /* Amélioration esthétique, contraste et luminosité ajustés */
 }
+
+
 /* Styles pour le switch */
 .switch,
 .switch__input {
