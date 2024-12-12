@@ -13,14 +13,22 @@
     bottom: 0;
     height: 50px;
     background-color: #b5a1d471;
-    width: 40000000px;
-    border-radius: 5px;
-    height: 40px;
-    border: #643bb1}
+    border-radius: 10px;
+    border: #643bb1;
+    padding: 10px 00px;
+}
+
+
 .nav-top {
     /*background: #d4d6ec65;*/
     color: #643bb1;
     border-radius: 5px;
     height: 40px;
     /*width: 50px;*/
+}
+
+.nav-lat-div {
+    position: absolute;
+    background-color: #f4f0f0;
+    border-radius: 10px;
 }
