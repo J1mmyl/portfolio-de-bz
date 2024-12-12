@@ -1,27 +1,26 @@
 .nav-lat {
-    /*background: #468fd328;*/
+    position: absolute;
+    top: 0;
+    border-radius: 10px;
+    height: 50px;
+}
+
+.nav-lat a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 50px;
     background-color: #b5a1d471;
     width: 40000000px;
     border-radius: 5px;
     height: 40px;
-    border: #643bb1
-}
-.nav-lat:hover {
-    /*background: #468fd328;*/
-    transform: scale(2.05);
-    box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
-}
-
-
+    border: #643bb1}
 .nav-top {
     /*background: #d4d6ec65;*/
     color: #643bb1;
     border-radius: 5px;
     height: 40px;
     /*width: 50px;*/
-}
-.nav-top:hover {
-    /*background: #468fd328;*/
-    transform: scale(2.05);
-    box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
 }

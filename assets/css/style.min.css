@@ -4865,8 +4865,10 @@ mark {
     background-color:#c0e3e7;
     color:#010101
 }
+
+/**Forme en haut a droite dans toutes les pages */
 #crt-bg-shape-2 polygon{
-    fill:#c0e3e7
+    fill:#2195f323
 }
 #crt-main-nav .sub-menu a,#crt-main-nav-sm li.current a,#crt-main-nav-sm li>a:hover,#crt-main-nav>ul>li.current>a,#crt-main-nav>ul>li>a:hover,.btn-primary,.crt-logo,.crt-nav a,.crt-tooltip,.form-item,.page-numbers.current,.page-numbers:hover,.pf-filter button,.search-title span,.tabs .tabs-menu a,.widget_posts_entries a,.widget_posts_entries li h3,.widget_recent_entries li>a .widget_categories li a,.widget_tag_cloud .tagcloud a,blockquote.quote-side:before,blockquote.quote-top:before,h1,h2,h4,h5,h6{
     color:#051201
@@ -4909,7 +4911,7 @@ mark {
     fill:#e1e1e1
 }
 #crt-sidebar-btn,.form-item,.search-form .search-field,body{
-    background-color:#b0b7ff42
+    background-color:#fffffffa
 }
 .text-dropcup-sq{
     color:#fff
