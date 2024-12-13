@@ -19,6 +19,21 @@
     color: black hsl(var(--hue), 15%, 90%);
     filter: invert(100%) hue-rotate(-130deg); /* Amélioration esthétique, contraste et luminosité ajustés */
 }
+.dark-mode .crt-paper {
+    background-color: #cacaca96; /*Couleur de la page qui scroll si la page est en dark mode*/
+    filter: none;
+}
+
+.dark-mode .nav-lat-div {
+    background-color: #cacacaf8; /*Couleur de la page qui scroll si la page est en dark mode*/
+    filter: none;
+}
+
+.dark-mode .nav-lat a {
+    background-color: #4c4755; /*Couleur de la page qui scroll si la page est en dark mode*/
+    filter: none;
+}
+
 .dark-mode .avatar,
 .dark-mode img {
     filter: invert(100%) hue-rotate(-230deg); /* Amélioration esthétique, contraste et luminosité ajustés */
