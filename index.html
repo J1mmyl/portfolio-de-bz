@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr" class="crt crt-side-box-on crt-nav-on crt-nav-type2 crt-main-nav-on crt-sidebar-on crt-layers-1">
+<html lang="fr" class="toggle-dark-mode crt crt-side-box-on crt-nav-on crt-nav-type2 crt-main-nav-on crt-sidebar-on crt-layers-1">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -36,7 +36,10 @@
     
     <!-- interactive button -->
     <meta name="social-media" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="assets/css/waves.css">
-
+    <!-- nav -->
+    <meta name="social-media" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/css/selected-nav.css">
+    
 </head>
 <body>  
 <div class="crt-wrapper">
@@ -94,11 +97,11 @@
         <!-- .crt-head-inner -->
     </div>
 
-    <nav id="crt-nav-sm" class="crt-nav hidden-lg hidden-md toggle-dark-mode">
+    <nav id="crt-nav-sm" class="crt-nav hidden-lg hidden-md">
         <ul class="clear-list>
             <li>
                 <a href="index.html" data-tooltip="Home">
-                    <img class="avatar avatar-42" src="assets/images/uploads/avatar/jimmy-42.png" srcset="assets/images/uploads/avatar/jimmy-84.png" alt="">
+                    <img class="avatar avatar-42" src="assets/images/uploads/avatar/jimmy-42.png" srcset="assets/images/uploads/avatar/jimmy-84.png" alt="Jimmy">
                 </a>
             </li>
             <li>
@@ -113,9 +116,6 @@
             </li>
             <li>
                 <a href="contact.html" data-tooltip="Contact"><span class="crt-icon crt-icon-contact"></span></a>
-            </li>
-            <li>
-                <a href="category.html" data-tooltip="Blog"><span class="crt-icon crt-icon-blog"></span></a>
             </li>
             <li>
                 <!-- partial:index.partial.html -->
@@ -166,7 +166,7 @@
 <!-- #crt-header -->
 <div id="crt-container" class="crt-container">
 <div id="crt-side-box-wrap" class="crt-sticky">
-    <div id="crt-side-box" class="toggle-dark-mode">
+    <div id="crt-side-box">
 
         <div class="crt-side-box-item">
 
@@ -229,13 +229,18 @@
         <div class="crt-nav-cont">
             <div id="crt-nav-scroll">
                 <nav id="crt-nav" class="crt-nav">
+
                     <ul class="clear-list">
-                        <li>
+                        <li class="nav-lat-pp">
                             <a href="index.html" data-tooltip="Home"><img class="avatar avatar-42"
                                                                             src="assets/images/uploads/avatar/jimmy-42.png"
                                                                             srcset="assets/images/uploads/avatar/jimmy-84.png"
                                                                             alt=""></a>
                         </li>
+                    </ul>
+
+                    <ul class="clear-list nav-lat-div"> 
+
                         <li>
                             <a href="experience.html" data-tooltip="Experience"><span
                                     class="crt-icon crt-icon-experience"></span></a>
@@ -252,9 +257,10 @@
                             <a href="contact.html" data-tooltip="Contact"><span
                                     class="crt-icon crt-icon-contact"></span></a>
                         </li>
-                        <li>
-                            <a href="category.html" data-tooltip="Blog"><span class="crt-icon crt-icon-blog"></span></a>
-                        </li>
+
+                    </ul>
+
+                    <ul class="clear-list">
                         <li>
                             <!-- partial:index.partial.html -->
                             <svg display="none">
@@ -297,6 +303,7 @@
                             <!-- partial -->
                         </li>
                     </ul>
+
                 </nav>
             </div>
 

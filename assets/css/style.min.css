@@ -8,7 +8,7 @@ a,pre{
     word-wrap:break-word
 }
 .h1 a,.h2 a,.h3 a,.h4 a,.h5 a,.h6 a,a:hover,h1 a,h2 a,h3 a,h4 a,h5 a,h6 a,mark{
-    text-decoration:none
+    text-decoration:none;
 }
 address,dl,pre{
     margin-bottom:22px
@@ -78,7 +78,8 @@ a{
 .h1,.h2,.h3,.h4,.h5,.h6,h1,h2,h3,h4,h5,h6{
     font-weight:700;
     line-height:1.1;
-    margin-bottom:22px
+    margin-bottom:22px;
+    border-radius: 0px !important;
 }
 blockquote p:last-child,ol ol,ol ul,ul ol,ul ul{
     margin-bottom:0
@@ -454,7 +455,7 @@ audio,canvas,progress,video{
     vertical-align:middle
 }
 img{
-    border:0;
+    border-radius: 0px !important;
     height:auto;
     display:inline-block
 }
@@ -3390,7 +3391,7 @@ body {
     }
     .crt-side-box-on .crt-paper-cont{
         float:left;
-        width:100%
+        width:100%;
     }
     .crt-side-box-on .crt-container-sm{
         margin-left:310px
@@ -3399,7 +3400,7 @@ body {
         max-width:1140px
     }
     .crt-side-box-on.crt-nav-on .crt-container{
-        max-width:1196px
+        max-width:1596px
     }
 }
 @media (min-width:1200px){
@@ -4746,7 +4747,8 @@ body,h1,h2,h3,h4,h5,h6{
 
 /*Couleur de la boite des dates de la page experiences*/
 .education-date {
-    background-color: #c0e3e7
+    background-color: #c0e3e7;
+    border-radius: 0px;
 }
 
 /*Couleur quand souris passe sur bouton menu pages et blog*/

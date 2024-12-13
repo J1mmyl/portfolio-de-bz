@@ -1,3 +1,9 @@
+.nav-lat-div {
+    position: absolute;
+    background-color: #f4f0f0;
+    border-radius: 10px;
+}
+
 .nav-lat {
     position: absolute;
     top: 0;
@@ -18,7 +24,6 @@
     padding: 10px 00px;
 }
 
-
 .nav-top {
     /*background: #d4d6ec65;*/
     color: #643bb1;
@@ -27,8 +32,30 @@
     /*width: 50px;*/
 }
 
-.nav-lat-div {
+
+
+.nav-lat-div-pp {
     position: absolute;
     background-color: #f4f0f0;
     border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.nav-lat-pp {
+    position: absolute;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-radius: 10px;
+    height: 50px;
+    width: 50px;
+}
+
+.nav-lat-pp a {
+    background-color: #b5a1d471;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    padding: 4px 0px;
+
 }
