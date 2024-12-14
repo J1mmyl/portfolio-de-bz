@@ -1,38 +1,25 @@
 .nav-lat-div {
+    justify-content: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
     position: absolute;
     background-color: #f4f0f0;
     border-radius: 10px;
-}
-
-.nav-lat {
-    position: absolute;
-    top: 0;
-    border-radius: 10px;
-    height: 50px;
+    height: 230px;
+    
 }
 
 .nav-lat a {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    height: 50px;
-    background-color: #b5a1d471;
+    padding-bottom: 0px;
+}
+
+.nav-lat span {
+    justify-content: center;
+    margin-top: 20px;
+    background-color: #29db356d;
     border-radius: 10px;
-    border: #643bb1;
-    padding: 10px 00px;
+    height: 57.5px;
 }
-
-.nav-top {
-    /*background: #d4d6ec65;*/
-    color: #b9a7db;
-    border-radius: 5px;
-    height: 40px;
-    /*width: 50px;*/
-}
-
-
 
 .nav-lat-div-pp {
     position: absolute;
@@ -58,6 +45,8 @@
 
 .nav-top-div { /**La div qui regroupe tout */
     /* background-color: #643bb1; */
+    margin-top: 5px;
+    margin-bottom: 5px;
     border-radius: 0;
     display: flex;
     justify-content: center;
