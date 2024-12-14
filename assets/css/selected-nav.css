@@ -49,3 +49,41 @@
     height: 50px;
     width: 50px;
 }
+
+
+
+/**------------------------------------- */
+
+
+
+.nav-top-div { /**La div qui regroupe tout */
+    /* background-color: #643bb1; */
+    border-radius: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-top-border {
+    position: relative;
+    background-color: #f4f0f0;
+    border-radius: 10px;
+}
+
+.nav-top {
+    position: relative;
+    top: 0;
+    border-radius: 10px;
+    height: 50px;
+}
+
+.nav-top a {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 50px;
+    background-color: #b5a1d471;
+    border-radius: 10px;
+    margin-left: -5px;
+}

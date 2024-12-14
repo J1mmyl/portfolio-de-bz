@@ -24,12 +24,14 @@
     filter: none;
 }
 
-.dark-mode .nav-lat-div {
+.dark-mode .nav-lat-div,
+.dark-mode .nav-top-border {
     background-color: #cacacaf8; /*Couleur de la page qui scroll si la page est en dark mode*/
     filter: none;
 }
 
-.dark-mode .nav-lat a {
+.dark-mode .nav-lat a,
+.dark-mode .nav-top a {
     background-color: #4c4755; /*Couleur de la page qui scroll si la page est en dark mode*/
     filter: none;
 }
