@@ -1210,17 +1210,50 @@ textarea.form-item{
 }
 @media (max-width:767px){
     .hidden-xs{
-        display:none!important
+        display:flex!important
+        
     }
 }
-@media (min-width:768px) and (max-width:991px){
-    .hidden-sm{
-        display:none!important
+@media ( max-width: 1000px) {
+}
+/**Quand on zoom ou sur téléphone la barre latérale nav-lat */
+@media (max-width: 991px) {
+
+    .hidden-sm {
+        display: flex !important; /* Active Flexbox */
+        flex-direction: row; /* Dispose les éléments horizontalement */
+        align-items: center; /* Centre les éléments verticalement */
+        justify-content: center; /* Centre les éléments horizontalement */
+        position: fixed !important; /* Fixe la boîte dans la fenêtre */
+        top: 100px; /* Distance fixe depuis le haut */
+        transform: translateX(-50%); /* Centre l'élément par rapport à son propre centre */
+        height: 300px; /* Hauteur fixe */
+        transition: opacity 0.2s ease, background-color 0.3s ease;
+        z-index: 1000;
+        opacity: 0.4; /* Translucide par défaut */
+        cursor: pointer;
+        pointer-events: auto; /* Éléments interactifs */
+    }
+
+    .hidden-sm:hover {
+        opacity: 0.9; /* Barre complètement opaque au survol */
+    }
+
+    /* Assurez-vous que tous les éléments enfants de .hidden-sm sont centrés */
+    .hidden-sm > * {
+        width: auto; /* S'assure que les enfants respectent leur taille naturelle */
+        text-align: center; /* Centre le texte à l'intérieur */
     }
 }
+
+
+
+
+
 @media (min-width:992px) and (max-width:1199px){
     .hidden-md{
-        display:none!important
+        display:none!important;
+        background-color: #d8db28;
     }
 }
 @-webkit-keyframes FadeIn{

@@ -5,8 +5,7 @@
     position: absolute;
     background-color: #f4f0f0;
     border-radius: 10px;
-    height: 230px;
-    
+    height: 235px;
 }
 
 .nav-lat a {
@@ -16,7 +15,7 @@
 .nav-lat span {
     justify-content: center;
     margin-top: 20px;
-    background-color: #29db356d;
+    background-color: #ab90df85;
     border-radius: 10px;
     height: 57.5px;
 }
@@ -50,12 +49,16 @@
     border-radius: 0;
     display: flex;
     justify-content: center;
+    position: relative;
+    
 }
 
 .nav-top-border {
     position: relative;
     background-color: #f4f0f0;
     border-radius: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .nav-top {
