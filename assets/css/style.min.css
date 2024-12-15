@@ -1216,39 +1216,6 @@ textarea.form-item{
 }
 @media ( max-width: 1000px) {
 }
-/**Quand on zoom ou sur téléphone la barre latérale nav-lat */
-@media (max-width: 991px) {
-
-    .hidden-sm {
-        display: flex !important; /* Active Flexbox */
-        flex-direction: row; /* Dispose les éléments horizontalement */
-        align-items: center; /* Centre les éléments verticalement */
-        justify-content: center; /* Centre les éléments horizontalement */
-        position: fixed !important; /* Fixe la boîte dans la fenêtre */
-        top: 100px; /* Distance fixe depuis le haut */
-        transform: translateX(-50%); /* Centre l'élément par rapport à son propre centre */
-        height: 300px; /* Hauteur fixe */
-        transition: opacity 0.2s ease, background-color 0.3s ease;
-        z-index: 1000;
-        opacity: 0.4; /* Translucide par défaut */
-        cursor: pointer;
-        pointer-events: auto; /* Éléments interactifs */
-    }
-
-    .hidden-sm:hover {
-        opacity: 0.9; /* Barre complètement opaque au survol */
-    }
-
-    /* Assurez-vous que tous les éléments enfants de .hidden-sm sont centrés */
-    .hidden-sm > * {
-        width: auto; /* S'assure que les enfants respectent leur taille naturelle */
-        text-align: center; /* Centre le texte à l'intérieur */
-    }
-}
-
-
-
-
 
 @media (min-width:992px) and (max-width:1199px){
     .hidden-md{
@@ -3709,42 +3676,7 @@ body {
 #crt-nav-wrap .crt-nav a,.crt-tooltip{
     line-height:1em
 }
-#crt-nav-wrap{
-    float:right;
-    right:1px;
-    z-index:4;
-    width:56px
-}
-#crt-nav-wrap .crt-nav ul{
-    z-index:1;
-    position:relative
-}
-#crt-nav-wrap .crt-nav li{
-    padding:17px 0;
-    position:relative
-}
-#crt-nav-tools,#crt-nav-wrap .crt-nav li:first-child{
-    padding-top:10px
-}
-#crt-nav-wrap .crt-nav .crt-icon{
-    font-size:28px
-}
-#crt-nav-inner{
-    transition:top .3s ease-out
-}
-#crt-nav-scroll{
-    overflow-y:auto;
-    overflow-x:hidden
-}
-#crt-nav-scroll .mCSB_scrollTools{
-    visibility:hidden!important
-}
-#crt-nav-tools{
-    font-size:22px
-}
-#crt-nav-tools .crt-icon{
-    display:block
-}
+
 .crt-tooltip{
     font-size:1em;
     font-weight:400;
