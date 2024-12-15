@@ -5,19 +5,19 @@
     position: absolute;
     background-color: #f4f0f0;
     border-radius: 10px;
-    height: 235px;
+    height: 240px;
+    overflow: hidden;
 }
 
 .nav-lat a {
+    border-radius: 5px;
+    top: 0;
+    bottom: 0;
     padding-bottom: 0px;
-}
-
-.nav-lat span {
-    justify-content: center;
-    margin-top: 20px;
-    background-color: #ab90df85;
     border-radius: 10px;
-    height: 57.5px;
+    background-color: #ab90df85;
+
+
 }
 
 .nav-lat-div-pp {
@@ -34,48 +34,4 @@
     border-radius: 10px;
     height: 50px;
     width: 50px;
-}
-
-
-
-/**------------------------------------- */
-
-
-
-.nav-top-div { /**La div qui regroupe tout */
-    /* background-color: #643bb1; */
-    margin-top: 5px;
-    margin-bottom: 5px;
-    border-radius: 0;
-    display: flex;
-    justify-content: center;
-    position: relative;
-    
-}
-
-.nav-top-border {
-    position: relative;
-    background-color: #f4f0f0;
-    border-radius: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
-}
-
-.nav-top {
-    position: relative;
-    top: 0;
-    border-radius: 10px;
-    height: 50px;
-}
-
-.nav-top a {
-    position: relative;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    height: 50px;
-    background-color: #b5a1d471;
-    border-radius: 10px;
-    margin-left: -5px;
 }
