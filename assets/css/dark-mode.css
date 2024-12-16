@@ -45,6 +45,10 @@
     filter: invert(100%) hue-rotate(-230deg); /* Amélioration esthétique, contraste et luminosité ajustés */
 }
 
+.dark-mode .highlight-beige {
+    background-color: #bab0c4;
+    filter: invert(100%) hue-rotate(-230deg); /* Amélioration esthétique, contraste et luminosité ajustés */
+}
 /* Styles pour le switch */
 .switch,
 .switch__input {

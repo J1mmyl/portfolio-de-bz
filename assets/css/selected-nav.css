@@ -83,12 +83,12 @@
         align-items: center; /* Centre les éléments verticalement */
         justify-content: center; /* Centre les éléments horizontalement */
         position: fixed !important; /* Fixe la boîte dans la fenêtre */
-        top: 100px; /* Distance fixe depuis le haut */
+        top: 300px; /* Distance fixe depuis le haut */
         transform: translateX(-50%); /* Centre l'élément par rapport à son propre centre */
         height: 10px; /* Hauteur fixe */
         transition: opacity 0.2s ease, background-color 0.3s ease;
         z-index: 1000;
-        padding-right: 33%;
+        padding-right: 0%;
         opacity: 0.4; /* Translucide par défaut */
         cursor: pointer;
         pointer-events: auto; /* Éléments interactifs */
@@ -107,25 +107,16 @@
     .flex-de-cote {
         background-color: black;
     }
-    
-    #crt-nav {
-        height: 50px;
-        width: 400px;
-        display: flex;
-    }
 
     .nav-lat-div {
-        justify-content: center;
-        margin-top: 5px;
-        margin-bottom: 5px;
-        position: absolute;
-        background-color: #f4f0f0;
-        border-radius: 10px;
-        width: 240px;
-        height: 50px;
-        overflow: hidden;
-        display: flex;
+        box-shadow: 1px 4px 5px rgba(73, 71, 71, 0.212);
+    }
+    }
+
+@media (max-width: 800px) {
+    #crt-nav-wrap {
+        transform: scale(70%);
+        padding-right: 20px;
     }
 }
-
 
