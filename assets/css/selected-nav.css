@@ -3,7 +3,8 @@
     float:right;
     right:1px;
     z-index:4;
-    width:56px
+    width:56px;
+    transition: all 0.5s ease;
 }
 #crt-nav-wrap .crt-nav ul{
     z-index:1;
