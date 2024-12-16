@@ -4710,7 +4710,7 @@ body,h1,h2,h3,h4,h5,h6{
 
 /*Couleur de la boite des dates de la page experiences*/
 .education-date {
-    background-color: #c0e3e7;
+    background-color: #054d55;
     border-radius: 0px;
 }
 
@@ -4885,7 +4885,6 @@ mark {
 }
 #crt-container,#crt-main-nav .sub-menu,#crt-sidebar, .crt-paper,.cr-carousel .slick-next,.cr-carousel .slick-prev,.crt-card-footer,.crt-head-inner,.crt-nav-type1 .crt-nav-cont,.crt-paper-layers:after,.crt-paper-layers:before,.crt-side-box-item,.crt-tooltip:after,.education-box:last-child:after,.pf-popup-content,.tooltip:after,blockquote.quote-side:before,blockquote.quote-top:before{
     background-color:#f4f0f0; /*Couleur de la page qui scroll*/
-    
 }
 .tooltip:before{
     border-top-color:#fff
