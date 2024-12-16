@@ -7,15 +7,18 @@
   line-height: 1.2em;
   display: block;
   margin-bottom: 0.7em;
+  
 }
 
 /* Progress Bar: Chart */
 .progress-chart {
   text-align: center;
   display: inline-block;
+  
 
   .progress-title {
     margin-top: 10px;
+    
   }
 
   .progress-bar {
@@ -23,10 +26,12 @@
     width: 93px;
     margin: 0 auto;
     position: relative;
+    
 
     svg {
       height: 100%;
       display: block;
+      
     }
   }
 }
@@ -34,6 +39,7 @@
 /* Progress Bar: Line */
 .progress-line {
   margin-bottom: 20px;
+  
 
   .progress-title {
     padding-right: 3.8em;
@@ -42,6 +48,7 @@
   .progress-bar {
     width: 100%;
     height: 5px;
+    
   }
 
   svg {
@@ -59,6 +66,7 @@
   .progress-bar {
     white-space: nowrap;
     line-height: 0.938em;
+    background-color: yellow;
   }
 
   .bullet {

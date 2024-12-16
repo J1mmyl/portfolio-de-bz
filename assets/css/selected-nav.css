@@ -84,7 +84,7 @@
         align-items: center; /* Centre les éléments verticalement */
         justify-content: center; /* Centre les éléments horizontalement */
         position: fixed !important; /* Fixe la boîte dans la fenêtre */
-        top: 300px; /* Distance fixe depuis le haut */
+        top: 240px; /* Distance fixe depuis le haut */
         transform: translateX(-50%); /* Centre l'élément par rapport à son propre centre */
         height: 10px; /* Hauteur fixe */
         transition: opacity 0.2s ease, background-color 0.3s ease;
