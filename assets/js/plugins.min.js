@@ -5,7 +5,7 @@
  */
 ! function(e) {
     var n = "object" == typeof window && window || "object" == typeof self && self;
-    "" != typeof exports ? e(exports) : n && (n.hljs = e({}), "function" == typeof define && define.amd && define([], function() {
+    "undefined" != typeof exports ? e(exports) : n && (n.hljs = e({}), "function" == typeof define && define.amd && define([], function() {
         return n.hljs
     }))
 }(function(e) {
@@ -712,7 +712,7 @@ hljs.registerLanguage("javascript", function(e) {
         aliases: ["js", "jsx"],
         k: {
             keyword: "in of if for while finally var new function do return void else break catch instanceof with throw case default try this switch continue typeof delete let yield const export super debugger as async await static import from as",
-            literal: "true false null  NaN Infinity",
+            literal: "true false null undefined NaN Infinity",
             built_in: "eval isFinite isNaN parseFloat parseInt decodeURI decodeURIComponent encodeURI encodeURIComponent escape unescape Object Function Boolean Error EvalError InternalError RangeError ReferenceError StopIteration SyntaxError TypeError URIError Number Math Date String RegExp Array Float32Array Float64Array Int16Array Int32Array Int8Array Uint16Array Uint32Array Uint8Array Uint8ClampedArray ArrayBuffer DataView JSON Intl arguments require module console window document Symbol Set Map WeakSet WeakMap Proxy Reflect Promise"
         },
         c: [{
@@ -803,7 +803,7 @@ hljs.registerLanguage("javascript", function(e) {
 
 ! function(t, e) {
     "function" == typeof define && define.amd ? define("ev-emitter/ev-emitter", e) : "object" == typeof module && module.exports ? module.exports = e() : t.EvEmitter = e()
-}("" != typeof window ? window : this, function() {
+}("undefined" != typeof window ? window : this, function() {
     function t() {}
     var e = t.prototype;
     return e.on = function(t, e) {
@@ -997,7 +997,7 @@ function(t, e) {
             }
         }
         if (a) {
-            var f = "" == typeof console ? b : function(a) {
+            var f = "undefined" == typeof console ? b : function(a) {
                 console.error(a)
             };
             return a.bridget = function(a, b) {
@@ -1242,7 +1242,7 @@ function() {
             var j, k, l, m = !1;
             return f
         }
-        var g = "" == typeof console ? d : function(a) {
+        var g = "undefined" == typeof console ? d : function(a) {
                 console.error(a)
             },
             h = ["paddingLeft", "paddingRight", "paddingTop", "paddingBottom", "marginLeft", "marginRight", "marginTop", "marginBottom", "borderLeftWidth", "borderRightWidth", "borderTopWidth", "borderBottomWidth"];
@@ -2376,11 +2376,11 @@ function() {
  * Website: http://manos.malihu.gr/jquery-custom-content-scroller/
  */
 ! function(e) {
-    "function" == typeof define && define.amd ? define(["jquery"], e) : "" != typeof module && module.exports ? module.exports = e : e(jQuery, window, document)
+    "function" == typeof define && define.amd ? define(["jquery"], e) : "undefined" != typeof module && module.exports ? module.exports = e : e(jQuery, window, document)
 }(function(e) {
     ! function(t) {
         var o = "function" == typeof define && define.amd,
-            a = "" != typeof module && module.exports,
+            a = "undefined" != typeof module && module.exports,
             n = "https:" == document.location.protocol ? "https:" : "http:",
             i = "cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js";
         o || (a ? require("jquery-mousewheel")(e) : e.event.special.mousewheel || e("head").append(decodeURI("%3Cscript src=" + n + "//" + i + "%3E%3C/script%3E"))), t()
@@ -2532,7 +2532,7 @@ function() {
                     })
                 },
                 scrollTo: function(t, o) {
-                    if ("" != typeof t && null != t) {
+                    if ("undefined" != typeof t && null != t) {
                         var n = f.call(this);
                         return e(n).each(function() {
                             var n = e(this);
@@ -2554,7 +2554,7 @@ function() {
                                     c = Y.call(this, t),
                                     d = s.scrollInertia > 0 && s.scrollInertia < 17 ? 17 : s.scrollInertia;
                                 c[0] = X.call(this, c[0], "y"), c[1] = X.call(this, c[1], "x"), s.moveDragger && (c[0] *= i.scrollRatio.y, c[1] *= i.scrollRatio.x), s.dur = ne() ? 0 : d, setTimeout(function() {
-                                    null !== c[0] && "" != typeof c[0] && "x" !== r.axis && i.overflowed[0] && (s.dir = "y", s.overwrite = "all", G(n, c[0].toString(), s)), null !== c[1] && "" != typeof c[1] && "y" !== r.axis && i.overflowed[1] && (s.dir = "x", s.overwrite = "none", G(n, c[1].toString(), s))
+                                    null !== c[0] && "undefined" != typeof c[0] && "x" !== r.axis && i.overflowed[0] && (s.dir = "y", s.overwrite = "all", G(n, c[0].toString(), s)), null !== c[1] && "undefined" != typeof c[1] && "y" !== r.axis && i.overflowed[1] && (s.dir = "x", s.overwrite = "none", G(n, c[1].toString(), s))
                                 }, s.timeout)
                             }
                         })
@@ -3278,7 +3278,7 @@ function() {
                 return "function" == typeof t && (t = t()), t instanceof Array ? n = t.length > 1 ? [t[0], t[1]] : "x" === o.axis ? [null, t[0]] : [t[0], null] : (n[0] = t.y ? t.y : t.x || "x" === o.axis ? null : t, n[1] = t.x ? t.x : t.y || "y" === o.axis ? null : t), "function" == typeof n[0] && (n[0] = n[0]()), "function" == typeof n[1] && (n[1] = n[1]()), n
             },
             X = function(t, o) {
-                if (null != t && "" != typeof t) {
+                if (null != t && "undefined" != typeof t) {
                     var n = e(this),
                         i = n.data(a),
                         r = i.opt,
@@ -3687,11 +3687,11 @@ function() {
  * Website: https://kimmobrunfeldt.github.io/progressbar.js
  */
 ! function(a) {
-    if ("object" == typeof exports && "" != typeof module) module.exports = a();
+    if ("object" == typeof exports && "undefined" != typeof module) module.exports = a();
     else if ("function" == typeof define && define.amd) define([], a);
     else {
         var b;
-        b = "" != typeof window ? window : "" != typeof global ? global : "" != typeof self ? self : this, b.ProgressBar = a()
+        b = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : this, b.ProgressBar = a()
     }
 }(function() {
     var a;
@@ -3739,7 +3739,7 @@ function() {
 
                         function h(a, b) {
                             f(b, function(c) {
-                                "" == typeof a[c] && (a[c] = b[c])
+                                "undefined" == typeof a[c] && (a[c] = b[c])
                             })
                         }
 
@@ -3757,7 +3757,7 @@ function() {
                             var c = n.prototype.filter,
                                 d = a._filterArgs;
                             f(c, function(e) {
-                                "" != typeof c[e][b] && c[e][b].apply(a, d)
+                                "undefined" != typeof c[e][b] && c[e][b].apply(a, d)
                             })
                         }
 
@@ -3776,7 +3776,7 @@ function() {
                         }
 
                         function n(a, b) {
-                            this._currentState = a || {}, this._configured = !1, this._scheduleFunction = p, "" != typeof b && this.setConfig(b)
+                            this._currentState = a || {}, this._configured = !1, this._scheduleFunction = p, "undefined" != typeof b && this.setConfig(b)
                         }
                         var o, p, q = "linear",
                             r = 500,
@@ -3784,8 +3784,8 @@ function() {
                             t = Date.now ? Date.now : function() {
                                 return +new Date
                             },
-                            u = "" != typeof SHIFTY_DEBUG_NOW ? SHIFTY_DEBUG_NOW : t;
-                        p = "" != typeof window ? window.requestAnimationFrame || window.webkitRequestAnimationFrame || window.oRequestAnimationFrame || window.msRequestAnimationFrame || window.mozCancelRequestAnimationFrame && window.mozRequestAnimationFrame || setTimeout : setTimeout;
+                            u = "undefined" != typeof SHIFTY_DEBUG_NOW ? SHIFTY_DEBUG_NOW : t;
+                        p = "undefined" != typeof window ? window.requestAnimationFrame || window.webkitRequestAnimationFrame || window.oRequestAnimationFrame || window.msRequestAnimationFrame || window.mozCancelRequestAnimationFrame && window.mozRequestAnimationFrame || setTimeout : setTimeout;
                         var v, w, x, y;
                         return n.prototype.tween = function(a) {
                             return this._isTweening ? this : (void 0 === a && this._configured || this.setConfig(a), this._timestamp = u(), this._start(this.get(), this._attachment), this.resume())
@@ -3834,7 +3834,7 @@ function() {
                             composeEasingObject: m
                         }), "function" == typeof SHIFTY_DEBUG_NOW && (b.timeoutHandler = l), "object" == typeof d ? c.exports = n : "function" == typeof a && a.amd ? a(function() {
                             return n
-                        }) : "" == typeof b.Tweenable && (b.Tweenable = n), n
+                        }) : "undefined" == typeof b.Tweenable && (b.Tweenable = n), n
                     }();
                 ! function() {
                     e.shallowCopy(e.prototype.formula, {
@@ -4557,7 +4557,7 @@ function() {
  */
 ! function(a) {
     "use strict";
-    "function" == typeof define && define.amd ? define(["jquery"], a) : "" != typeof exports ? module.exports = a(require("jquery")) : a(jQuery)
+    "function" == typeof define && define.amd ? define(["jquery"], a) : "undefined" != typeof exports ? module.exports = a(require("jquery")) : a(jQuery)
 }(function(a) {
     "use strict";
     var b = window.Slick || {};
@@ -4640,7 +4640,7 @@ function() {
                 touchObject: {},
                 transformsEnabled: !1,
                 unslicked: !1
-            }, a.extend(e, e.initials), e.activeBreakpoint = null, e.animType = null, e.animProp = null, e.breakpoints = [], e.breakpointSettings = [], e.cssTransitions = !1, e.focussed = !1, e.interrupted = !1, e.hidden = "hidden", e.paused = !0, e.positionProp = null, e.respondTo = null, e.rowCount = 1, e.shouldClick = !0, e.$slider = a(c), e.$slidesCache = null, e.transformType = null, e.transitionType = null, e.visibilityChange = "visibilitychange", e.windowWidth = 0, e.windowTimer = null, f = a(c).data("slick") || {}, e.options = a.extend({}, e.defaults, d, f), e.currentSlide = e.options.initialSlide, e.originalSettings = e.options, "" != typeof document.mozHidden ? (e.hidden = "mozHidden", e.visibilityChange = "mozvisibilitychange") : "" != typeof document.webkitHidden && (e.hidden = "webkitHidden", e.visibilityChange = "webkitvisibilitychange"), e.autoPlay = a.proxy(e.autoPlay, e), e.autoPlayClear = a.proxy(e.autoPlayClear, e), e.autoPlayIterator = a.proxy(e.autoPlayIterator, e), e.changeSlide = a.proxy(e.changeSlide, e), e.clickHandler = a.proxy(e.clickHandler, e), e.selectHandler = a.proxy(e.selectHandler, e), e.setPosition = a.proxy(e.setPosition, e), e.swipeHandler = a.proxy(e.swipeHandler, e), e.dragHandler = a.proxy(e.dragHandler, e), e.keyHandler = a.proxy(e.keyHandler, e), e.instanceUid = b++, e.htmlExpr = /^(?:\s*(<[\w\W]+>)[^>]*)$/, e.registerBreakpoints(), e.init(!0)
+            }, a.extend(e, e.initials), e.activeBreakpoint = null, e.animType = null, e.animProp = null, e.breakpoints = [], e.breakpointSettings = [], e.cssTransitions = !1, e.focussed = !1, e.interrupted = !1, e.hidden = "hidden", e.paused = !0, e.positionProp = null, e.respondTo = null, e.rowCount = 1, e.shouldClick = !0, e.$slider = a(c), e.$slidesCache = null, e.transformType = null, e.transitionType = null, e.visibilityChange = "visibilitychange", e.windowWidth = 0, e.windowTimer = null, f = a(c).data("slick") || {}, e.options = a.extend({}, e.defaults, d, f), e.currentSlide = e.options.initialSlide, e.originalSettings = e.options, "undefined" != typeof document.mozHidden ? (e.hidden = "mozHidden", e.visibilityChange = "mozvisibilitychange") : "undefined" != typeof document.webkitHidden && (e.hidden = "webkitHidden", e.visibilityChange = "webkitvisibilitychange"), e.autoPlay = a.proxy(e.autoPlay, e), e.autoPlayClear = a.proxy(e.autoPlayClear, e), e.autoPlayIterator = a.proxy(e.autoPlayIterator, e), e.changeSlide = a.proxy(e.changeSlide, e), e.clickHandler = a.proxy(e.clickHandler, e), e.selectHandler = a.proxy(e.selectHandler, e), e.setPosition = a.proxy(e.setPosition, e), e.swipeHandler = a.proxy(e.swipeHandler, e), e.dragHandler = a.proxy(e.dragHandler, e), e.keyHandler = a.proxy(e.keyHandler, e), e.instanceUid = b++, e.htmlExpr = /^(?:\s*(<[\w\W]+>)[^>]*)$/, e.registerBreakpoints(), e.init(!0)
         }
         var b = 0;
         return c
@@ -5094,7 +5094,7 @@ function() {
     }, b.prototype.setOption = b.prototype.slickSetOption = function() {
         var c, d, e, f, h, b = this,
             g = !1;
-        if ("object" === a.type(arguments[0]) ? (e = arguments[0], g = arguments[1], h = "multiple") : "string" === a.type(arguments[0]) && (e = arguments[0], f = arguments[1], g = arguments[2], "responsive" === arguments[0] && "array" === a.type(arguments[1]) ? h = "responsive" : "" != typeof arguments[1] && (h = "single")), "single" === h) b.options[e] = f;
+        if ("object" === a.type(arguments[0]) ? (e = arguments[0], g = arguments[1], h = "multiple") : "string" === a.type(arguments[0]) && (e = arguments[0], f = arguments[1], g = arguments[2], "responsive" === arguments[0] && "array" === a.type(arguments[1]) ? h = "responsive" : "undefined" != typeof arguments[1] && (h = "single")), "single" === h) b.options[e] = f;
         else if ("multiple" === h) a.each(e, function(a, c) {
             b.options[a] = c
         });
@@ -5208,7 +5208,7 @@ function() {
             d = Array.prototype.slice.call(arguments, 1),
             e = a.length;
         for (f = 0; e > f; f++)
-            if ("object" == typeof c || "" == typeof c ? a[f].slick = new b(a[f], c) : g = a[f].slick[c].apply(a[f].slick, d), "" != typeof g) return g;
+            if ("object" == typeof c || "undefined" == typeof c ? a[f].slick = new b(a[f], c) : g = a[f].slick[c].apply(a[f].slick, d), "undefined" != typeof g) return g;
         return a
     }
 });

@@ -1,4 +1,6 @@
-/* Réinitialisation globale */
+
+
+
 * {
     border-radius: 15px;
     box-sizing: border-box;
@@ -40,6 +42,14 @@
 .dark-mode .avatar,
 .dark-mode img {
     filter: invert(100%) hue-rotate(-230deg); /* Amélioration esthétique, contraste et luminosité ajustés */
+}
+.dark-mode .card-1{
+    background-color: #242424;
+    filter: invert(100%) hue-rotate(-230deg);
+}
+
+.dark-mode .card h4 {
+    color: aliceblue;
 }
 
 .dark-mode .switch {
