@@ -90,7 +90,7 @@
     position: absolute;
     top: 0.25em;
     left: 0.25em;
-    width: 2.25em;
+    width: 2.5em;
     height: 1em;
 }
 
@@ -132,7 +132,7 @@
         0 0 0 0.0625em hsla(var(--hue), 90%, 50%, 0),
         0 0.125em 0.5em hsla(var(--hue), 10%, 10%, 0.1);
     outline: transparent;
-    width: 2.75em;
+    width: 2.80em;
     height: 1.5em;
     -webkit-appearance: none;
     appearance: none;

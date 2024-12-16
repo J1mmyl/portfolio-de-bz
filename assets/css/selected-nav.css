@@ -96,6 +96,7 @@
 
     .hidden-sm:hover {
         opacity: 0.9; /* Barre complètement opaque au survol */
+
     }
 
     /* Assurez-vous que tous les éléments enfants de .hidden-sm sont centrés */
@@ -111,12 +112,20 @@
     .nav-lat-div {
         box-shadow: 1px 4px 5px rgba(73, 71, 71, 0.212);
     }
+    .switch__input {
+        width: 3em;
     }
+}
 
 @media (max-width: 800px) {
     #crt-nav-wrap {
         transform: scale(70%);
         padding-right: 20px;
+        user-select: none;
+    }
+    .switch__input {
+        width: 3em;
+        user-select: none;
     }
 }
 
