@@ -6016,7 +6016,7 @@ yx-axis
     white-space: nowrap;
 }
 
-.education-date:before {
+.flehe {
     content: "";
     top: 0;
     right: 100%;
@@ -6077,7 +6077,7 @@ yx-axis
         top: -4px;
     }
 
-    .education-date:before {
+    .flehe {
         display: none;
     }
 
@@ -6644,7 +6644,7 @@ mark,
 #crt-nav-sm li.current a,
 .progress-bullets .bullet,
 .education-date:after,
-.education-date:before {
+.flehe {
     border-color: #c0e3e7;
 }
 

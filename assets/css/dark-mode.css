@@ -51,9 +51,13 @@
     color: rgb(255, 255, 255);
     filter: invert(100%) hue-rotate(-230deg); /* Amélioration esthétique, contraste et luminosité ajustés */
 }
-.dark-mode .education {
-    background-color: "#adc1fb";
+
+.dark-mode .education-date,
+.dark-mode .flehe {
+    background-color: #406f91;
+    filter: invert(100%) hue-rotate(-230deg); /* Amélioration esthétique, contraste et luminosité ajustés */
 }
+
 /* Styles pour le switch */
 .switch,
 .switch__input {

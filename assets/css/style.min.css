@@ -4215,6 +4215,7 @@ body {
     border-radius:50%
 }
 .education-box h3{
+    width: 400px;
     letter-spacing:0;
     font-size:.938em;
     margin-top:15px;
@@ -4228,7 +4229,7 @@ body {
     content:'';
     position:absolute
 }
-.clients:after,.education-date:before{
+.clients:after,.flehe{
     content:""
 }
 .education-date{
@@ -4247,7 +4248,7 @@ body {
     position:relative;
     display:block
 }
-.education-date:before{
+.flehe{
     top:0;
     right:100%;
     width:0;
@@ -4291,7 +4292,7 @@ body {
         left:auto;
         top:-4px
     }
-    .education-date:before{
+    .flehe{
         display:none
     }
     .education-date:after{
@@ -4713,8 +4714,10 @@ body,h1,h2,h3,h4,h5,h6{
 
 /*Couleur de la boite des dates de la page experiences*/
 .education-date {
-    background-color: #054d55;
+    color: #ececec;
+    background-color: #406f91;
     border-radius: 0px;
+    
 }
 
 /*Couleur quand souris passe sur bouton menu pages et blog*/
@@ -4822,8 +4825,8 @@ mark {
     background-image: linear-gradient(0deg, #3d77a0, #3d77a0);
 }
 
-#crt-nav-sm li.current a,.brd-primary,.btn-share,.education-date:after,.education-date:before,.progress-bullets .bullet{
-    border-color:#c0e3e7
+#crt-nav-sm li.current a,.brd-primary,.btn-share,.education-date:after,.flehe,.progress-bullets .bullet{
+    border-color:#406f91 /*Couleur de la fleche*/
 }
 ::-moz-selection{
     background-color:#c0e3e7;
