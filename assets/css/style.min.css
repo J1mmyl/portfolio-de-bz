@@ -3148,6 +3148,9 @@ body {
 .crt-paper,.crt-wrapper{
     position:relative
 }
+.crt-paper {
+    padding: 15px 15px;
+}
 .cr-slider .slick-next:before,.cr-slider .slick-prev:before{
     color:#fff;
     font-size:20px;

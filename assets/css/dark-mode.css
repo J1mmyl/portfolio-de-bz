@@ -22,7 +22,7 @@
 .dark-mode .crt-paper {
     background-color: #cacaca96; /*Couleur de la page qui scroll si la page est en dark mode*/
     filter: none;
-    padding: 20px 20px;
+    padding: 15px 15px;
 }
 
 .dark-mode .nav-lat-div,
