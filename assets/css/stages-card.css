@@ -13,6 +13,7 @@
     border: none;
     box-shadow: none;
     
+    
 }
 .stages-card {
     font-size: 1em;
@@ -22,6 +23,20 @@
     border-radius: .28571429rem;
     box-shadow: 0 1px 3px 0 #d4d4d5, 0 0 0 1px #d4d4d5;
     margin-top:20px;
+    max-width: 400PX;
+    height: auto;
+    ;
+}
+
+.stages-card-title {
+    justify-content: center;
+    background-color: rgb(235, 235, 235);
+    padding: 10px 10px;
+    min-height: 40px;
+    width: 370px;
+    padding: auto px;
+    height: auto;
+    border-radius: 10px;
 }
 
 .stages-carousel-indicators li {

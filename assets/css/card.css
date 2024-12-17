@@ -1,7 +1,8 @@
 
 .card{
     border-radius: 4px;
-    background: #ececec;
+    max-width: 400PX;
+    background: #f5f0f0;
     box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
     transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
     padding: 35px 80px 25px 35px;
