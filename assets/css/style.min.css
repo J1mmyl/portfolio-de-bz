@@ -4762,23 +4762,11 @@ body,h1,h2,h3,h4,h5,h6{
 
 mark {
     position: relative;
-    background-color: transparent; /* Enlever le fond jaune par défaut */
+    background-color: #dbd6f45d; /* Enlever le fond jaune par défaut */
     color: inherit; /* Garder la couleur du texte par défaut */
-  }
-  
-  mark::before {
-    /* Highlight color */
-    background-color: #9790ff44;
-  
-    content: "";
-    position: absolute;
-    width: calc(100% + 4px);
-    height: 60%;
-    left: -2px;
-    bottom: 0;
-    z-index: -1;
-    transform: rotate(-2deg);
-  }
+    padding: 5px 5px;
+    border-radius: 2px;
+    }
   
   
   /*****************************************/
