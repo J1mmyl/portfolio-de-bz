@@ -54,3 +54,7 @@ max-height: 120px;
     margin: 20px;
 }
 }
+
+.custom-reference-box {
+    background-color: #ffde59 !important;
+}
