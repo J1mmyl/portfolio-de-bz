@@ -33,7 +33,7 @@
     background-color: rgb(235, 235, 235);
     padding: 10px 10px;
     min-height: 40px;
-    width: 370px;
+    max-width: 370px;
     padding: auto px;
     height: auto;
     border-radius: 10px;
